@@ -155,10 +155,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.content-section__list {
-  margin-block-start: 20px;
-}
-
 .article__list-title {
   color: var(--head-color);
   font-weight: 700;
@@ -170,10 +166,6 @@
 .title-decor {
   height: min-content;
   background-color: var(--accent-color);
-}
-
-.content {
-  padding: 0 10px;
 }
 
 .content-section__title {
@@ -344,6 +336,13 @@
   .footer {
     min-height: 668px;
   }
+  .content-section-grid {
+    grid-template-columns: none;
+  }
+
+  .content-section__title {
+    margin-block-end: 20px;
+  }
 }
 
 /*  width >= 768px  */
@@ -379,10 +378,11 @@
     padding: 0 20px;
   }
 
+  /*
   .content-section__list {
     margin-block-start: 0;
   }
-
+*/
   .content-section__title {
     margin-block-end: 20px;
   }
