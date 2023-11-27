@@ -136,7 +136,7 @@
 }
 
 .header__title {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--title-decor-color);
 }
 
 .header__paragraph {
@@ -168,7 +168,7 @@
 
 .title-decor {
   height: min-content;
-  background-color: var(--accent-color);
+  background-color: var(--title-decor-color);
 }
 
 .content-section__title {
@@ -194,7 +194,7 @@
 
 .article__text-link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--title-decor-color);
 }
 
 .article__text-link:hover {
@@ -265,7 +265,7 @@
 }
 
 .footer__title {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--title-decor-color);
 }
 
 /*  Медиазапросы  */
@@ -282,6 +282,14 @@
     min-height: 768px;
   }
 
+  .header__title {
+    text-shadow: 4px 4px 0 var(--shadow-color);
+  }
+
+  .footer__title {
+    text-shadow: 2px 2px 0 var(--shadow-color);
+  }
+  
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -413,51 +421,4 @@
     min-height: 1024px;
     margin-inline-start: 0px;
   }
-}
-
-
-.theme_light .header__title {
-  text-shadow: 4px 4px 0 var(--shadow-color);
-}
-
-.theme_light .decorated-zone::before {
-  border-inline-end: 1px solid var(--text-color);
-  border-block-start: 1px solid var(--text-color);
-}
-
-.theme_light .decorated-zone::after {
-  border-inline-start: 1px solid var(--text-color);
-  border-block-end: 1px solid var(--text-color);
-}
-
-.theme_light .header__theme-menu-button_active {
-  outline: 1px solid var(--text-color);
-}
-
-.theme_light .header__theme-menu-button:hover {
-  outline: 1px solid var(--border-color);
-}
-
-.theme_light .header__theme-menu-button:focus-visible {
-  background-color: var(--text-color);
-}
-
-.theme_light .header__paragraph {
-  color: var(--text-color);
-}
-
-.theme_light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.theme_light .content-section__title {
-  color: var(--text-color);
-}
-
-.theme_light .article__list-title {
-  color: var(--text-color);
-}
-
-.theme_light .article__list-title-sub {
-  color: var(--text-color);
 }
